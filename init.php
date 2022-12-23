@@ -13,6 +13,12 @@
         	$result = str_replace("'><br>\n<br>","'>",$article["content"]);
 
 			$article["content"] = $result;
+		
+		        $subject = $article["content"];
+        		$pattern = '~(<a.href="https:\/\/twitter.com\/profile_images)(.*?)(">.*?<\/a>)~mi';
+        		$replacement = '';
+        		$article["content"] = preg_replace($pattern,$replacement,$subject);
+
                 return $article;
         }
         function api_version() {
