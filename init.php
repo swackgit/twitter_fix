@@ -14,10 +14,10 @@
 
 			$article["content"] = $result;
 		
-		        $subject = $article["content"];
-        		$pattern = '~(<a.href="https:\/\/pbs.twimg.com\/profile_images.*.jpg">.*?<\/a>)~mi';
-        		$replacement = '';
-        		$article["content"] = preg_replace($pattern,$replacement,$subject);
+#		        $subject = $article["content"];
+ #       		$pattern = '~(<a.href="https:\/\/pbs.twimg.com\/profile_images.*.jpg">.*?<\/a>)~mi';
+  #      		$replacement = '';
+   #     		$article["content"] = preg_replace($pattern,$replacement,$subject);
 
                 return $article;
         }
